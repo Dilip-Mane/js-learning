@@ -1,0 +1,47 @@
+console.log("======================Step One========================");
+var name;
+console.log("======================Before Initialization========================");
+console.log(name);
+console.log("======================After Initialization========================");
+name = "Dilip Mane";
+console.log(name);
+console.log("======================After Updation========================");
+name ="Sagar Mane";
+console.log(name);
+console.log("======================Step Two========================");
+var myLove = "I love only JS";
+console.log("My Love: ",myLove);
+console.log("======================Step Three========================");
+var firstName="Dilip";
+console.log(firstName);
+var lastName="Mane";
+console.log(lastName);
+var age = 34;
+console.log(age);
+var address = "Pune";
+console.log(address);
+var pincode = 411014;
+console.log(pincode);
+var maritalStatus = "married";
+console.log(maritalStatus);
+
+console.log("============Swap two variables===============");
+var sweety ="sweety";
+var cutie = "cutie";
+console.log("Before swap - Cutie: ", cutie ," Sweety: ", sweety);
+var temp = sweety;
+sweety = cutie;
+cutie= temp;
+console.log("After swap - Cutie: ", cutie ," Sweety: ", sweety);
+console.log("============Swap three variables===============");
+var a = 100;
+var b = 200;
+var c = 300;
+console.log("Before swap - a: ", a ," b: ", b, " c",c);
+var temp = a;
+a=b;
+b=c;
+c=temp;
+
+console.log("After swap - a: ", a ," b: ", b, " c",c);
+
