@@ -1,5 +1,5 @@
 var name = "Sagar";
 var age = 23; 
-var isMarried = true;
-var isSuccessful;
-console.log(typeof isSuccessful);
+//var isMarried = true;
+var isMarried;
+console.log(typeof isMarried);
