@@ -1,0 +1,28 @@
+
+var myString = `  Hey you are doing good, keep it up  `;
+console.log("==================Step 1=========================");
+console.log(`${myString}`);
+console.log("==================Step 2=========================");
+console.log(`length of given string is : ${myString.length}`);
+console.log("==================Step 3=========================");
+console.log(`myString after trim function : ${myString}`);
+console.log("==================Step 4=========================");
+var trimmedString = myString.trim();
+console.log(`legnth of string after trim function is : ${trimmedString.length}`);
+console.log("==================Step 5=========================");
+console.log(`Number of white spaces removed are : ${myString.length - trimmedString.length}`);
+console.log("==================Step 6=========================");
+console.log(`'${trimmedString.charAt(0)}' is first and '${trimmedString.charAt(trimmedString.length-1)}' Last character of string`);
+console.log("==================Step 7=========================");
+var splitWords = trimmedString.split(" ");
+console.log(`Number of words are : ${splitWords.length} in given string`);
+console.log("==================Step 8=========================");
+console.log(`good is present at ${trimmedString.search("good")} index`);
+//console.log(`good is present at ${trimmedString.indexOf("good")} index`);
+console.log("==================Step 9=========================");
+//var substring = trimmedString.substring(22);
+console.log(`Substring from 22 index is ${trimmedString.substring(22)}`);
+console.log("==================Step 10=========================");
+console.log(`Is string  ending with "up" : ${trimmedString.endsWith("up")}`);
+console.log("==================Step 11=========================");
+console.log(`Is string  starting with "Hey" : ${trimmedString.startsWith("Hey")}`);
