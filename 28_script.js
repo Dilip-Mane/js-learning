@@ -29,7 +29,60 @@ for (const element of elementsUi) {
 
 console.log('Modifying an existing element text');
 const techStackElement = document.querySelector('#techStack');
+console.log('Modifying an existing element text');
 techStackElement.innerHTML = "My Expertise in UI";
 
 console.log('Changing CSS ');
 techStackElement.style.color = "orange";
+
+console.log('Creating an element');
+
+const h2Element = document.createElement("h2");
+
+const textNodeProject = document.createTextNode("Project Name: College Management System");
+
+h2Element.appendChild(textNodeProject);
+
+h2Element.style.color="green";
+
+ 
+
+const projectNodeDiv = document.querySelector('.project');
+
+projectNodeDiv.appendChild(h2Element);
+
+console.log('Remove an element');
+const skillUlNode = document.querySelector('#skill');
+const JsLiNode = document.querySelector('#js');
+skillUlNode.removeChild(JsLiNode);
+
+function eventClicked(){
+    console.log("hey... click event triggered successfully...");
+}
+
+//const addButton = document.querySelector('#add');
+
+//addButton.addEventListener('click', ()=>{
+//   console.log('Add button click...'); 
+//});
+
+
+const addButton = document.querySelector('#add');
+
+addButton.addEventListener('click', ()=>{
+
+  const num = prompt("Enter the valid number to perform square", 1);
+
+  const elementPara = document.createElement('p');
+
+  const textNodeSquare = document.createTextNode(`Number ${num} and it's square is ${num*num}`)
+
+  elementPara.style.color= 'orange';
+
+  elementPara.appendChild(textNodeSquare)
+
+  const squareResultElement = document.querySelector('.square-result');
+
+  squareResultElement.appendChild(elementPara);
+
+});
